@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test anime Slide</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+		
+		$('#button').on('click', function(){
+			$('.right').css({'height':"2px"});
+			$('.right').animate({'width':"100%"},800);
+			
+			$('.left').css({'height':"2px"});
+			$('.left').animate({'width':"100%"},800);
+    	});
+		
+		
+	});
+</script>
+<style>
+	
+	html, body {
+		height:100%;
+		
+		
+	}
+	.left{
+		background-color: #f85555;
+		width:0%;
+		height:0px;
+		float:left;
+	}	
+	.right{
+		background-color: #848484;
+		width:0%;
+		height:0px;
+		float:left;
+	}
+	.content {
+		height:100px;
+		width:600px;
+		
+	}
+	
+	.clear{
+		float:clear;
+		
+	}
+	
+	.contentLeft {
+		width:50%;
+		float:left;
+		
+	}
+	
+	.contentRight {
+		width:50%;
+		float:left;
+	}
+</style>
+</head>
+<body>
+
+<div id="container">
+	
+	<div class="content">
+		<div class="contentLeft">
+			<div class="left"></div>
+		</div>
+		<div class="contentRight">
+			<div class="right"></div>
+		</div>
+		<div class="clear">
+	</div>
+	</div>
+	
+	<button id="button">LAUNCH</button>
+	
+</div>
+
+
+
+</body>
+</html>
