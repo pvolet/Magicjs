@@ -4,7 +4,7 @@ $(document).ready(function(){
 				
 		$('#button').on('click', function(){
 			$('.right').css({'height':"2px"});
-			$('.right').animate({'width':"100%"},500);
+			$('.right').animate({width: '100%', marginLeft: 0}, {duration: 300});
 			
 			$('.left').css({'height':"2px"});
 			$('.left').animate({'width':"100%"},500, function() {
